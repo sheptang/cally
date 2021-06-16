@@ -1,0 +1,84 @@
+#minicalContainer{
+	width:100%;
+	height:100%;
+}
+
+.minicalCanvas{
+	display:grid;
+	grid-gap:0;
+	grid-template-columns:40px 40px 40px 40px 40px 40px 40px;
+	grid-template-rows:40px 40px 40px 40px 40px 40px 40px;
+}
+
+.minicalCanvasItem{
+	line-height:40px;
+	text-align:center;
+}
+
+.minicalOffMonthDay{
+	color:#c0c0c0;
+}
+
+.minicalToday{
+	background-color:#005aed;
+	color:#fff;
+}
+
+.minicalToday:hover{
+	background-color:#003da0;
+}
+
+.minicalToday:active{
+	background-color:#000;
+}
+
+.minicalScopeDay{
+	background-color:#c1d8ff;
+	color:#000;
+}
+
+.minicalScopeDay:hover{
+	background-color:#adcbff;
+	color:#000;
+}
+
+.minicalScopeDay:active{
+	background-color:#7cacff;
+	color:#000;
+}
+
+.minicalScopeDay.minicalToday{
+	background-color:#000;
+	color:#fff;
+}
+
+#minicalControls{
+	color:#4c4c4c !important;
+	text-align:center;
+}
+
+#minicalControls div{
+	font-size:15px;
+	line-height:15px;
+}
+
+#minicalControls .round{
+	width:20px;
+	height:20px;
+	font-size:21px;
+	line-height:20px;
+	text-align:center;
+}
+
+#minicalScopeMonth > span{
+	height:20px;
+}
+
+#minicalYearInput{
+	width:38px;
+	height:15px;
+	color:#4c4c4c;
+	font-size:15px;
+	text-align:right;
+	line-height:15px;
+}

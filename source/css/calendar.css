@@ -1,0 +1,159 @@
+#calWeekTopBar{
+	width:calc(100% - 50px);
+	padding-left:40px;
+	padding-right:10px;
+}
+
+#calMoTopBar{
+	width:100%;
+}
+
+.calWeekSection,.calMoSection{
+	width:calc(100% / 7);
+}
+
+#calWeekTopBar > .no-p-m:first-child > .calWeekSection{
+	margin-bottom:5px;
+}
+
+.calMoItem{
+	width:calc((100% / 7) - 1px);
+	height:calc((50vh / 3) - (50px / 3) - 8px);
+	padding:7px 0 0 0;
+	font-size:13px;
+	text-align:center;
+	vertical-align:top;
+	border-right:1px solid #e8e8e8;
+	border-bottom:1px solid #e8e8e8;
+}
+
+.calMoItem:nth-child(7n){
+	border-right:none;
+}
+
+.calMoItem:nth-child(n+36){
+	border-bottom:none;
+}
+
+.calToday{
+	background-color:#005aed;
+	color:#fff;
+}
+
+.calToday:hover{
+	background-color:#003da0;
+}
+
+.calToday:active{
+	background-color:#000;
+}
+
+.calOffMonthDay{
+	color:#c0c0c0;
+}
+
+.calOffMonthDay.calToday{
+	color:#fff;
+}
+
+.calScopeDay{
+	background-color:#c1d8ff;
+	color:#000;
+}
+
+.calScopeDay:hover{
+	background-color:#adcbff;
+	color:#000;
+}
+
+.calScopeDay:active{
+	background-color:#7cacff;
+	color:#000;
+}
+
+.calScopeDay.calToday{
+	background-color:#000;
+	color:#fff;
+	border-color:#000;
+}
+
+#calWeekTopBar .no-p-m{
+	overflow:hidden;
+}
+
+#calWeekTopBar .no-p-m:nth-child(2){
+	border-bottom:1px solid #e8e8e8;
+}
+
+#calTimezone{
+	font-size:10px;
+	margin-top:-4.5px;
+	background-color:#fff;
+	z-index:3 !important;
+}
+
+#calWeekCanvas{
+	width:100%;
+	height:calc(100vh - 156px) !important;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	z-index:1 !important;
+	position:relative;
+}
+
+#calWeekCanvasBottom{
+	width:calc(100% - 411px);
+	height:1px;
+	bottom:13px;
+	margin-left:40px;
+	background-color:#e8e8e8;
+}
+
+#calWeekTimeDivision{
+	width:40px;
+}
+
+#calWeekTimeRow{
+	width:30px;
+	padding-right:10px;
+	font-size:10px;
+	height:60px;
+	text-align:right;
+}
+
+#calWeekTimeRow:first-child{
+	height:54.5px;
+}
+
+#calWeekTimeCanvas{
+	width:calc(100% - 40px);
+	display:grid;
+	grid-gap:0;
+	grid-template-columns:calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7);
+}
+
+.calWeekTimeCanvasItem{
+	width:calc(100% - 1px);
+	height:59px;
+	border-left:1px solid #e8e8e8;
+	border-bottom:1px solid #e8e8e8;
+}
+
+#calTimeDial{
+	width:calc((100% / 7) - 6px);
+	height:2px;
+	background-color:#e84118;
+	z-index:2 !important;
+}
+
+.calWeekTaskItem{
+	height:22px;
+	padding:4px;
+	color:#fff;
+	border-radius:.3em;
+	overflow:hidden;
+	text-overflow:clip;
+	white-space:nowrap;
+	line-height:12px;
+	background-color:rgba(26,115,232,0.7);
+}
